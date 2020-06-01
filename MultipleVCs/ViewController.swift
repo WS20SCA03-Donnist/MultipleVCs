@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+	@IBOutlet weak var enterNameTextField: UITextField!
+	
+	
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+			super.prepare(for: segue, sender: sender);
+			
+			guard let viewControllerTwo: ViewControllerTwo = segue.destination as? ViewControllerTwo else {
+				print ("I have no idea where we could be going to!!")
+				return;
+			}	//Transmit information from the FirstViewController to the SecondViewController.
+			if let text: String = enterNameTextField.text {
+				viewControllerTwo.userName = text;
+			}
 	}
 
 
+	@IBAction func nextButtonPressed(_ sender: UITextField) {
+		sender.resignFirstResponder();
+		
+	}
+	
 }
 
