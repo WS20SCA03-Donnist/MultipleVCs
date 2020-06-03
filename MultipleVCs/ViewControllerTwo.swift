@@ -15,24 +15,26 @@ class ViewControllerTwo: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-			super.prepare(for: segue, sender: sender);
-			
-			guard let viewControllerThree: ViewControllerThree = segue.destination as? ViewControllerThree else {
-				print ("Cant find the third viewcontroller")
-				return;
-			}
-			
-			// Do any additional setup after loading the view.
-			if let userName: String = userName {
-				helloNameLabel.text = "Hello \(userName).";
-			}else{
-				helloNameLabel.text = "Welcome!";
-			}
+		// Do any additional setup after loading the view.
+		if let userName: String = userName {
+			helloNameLabel.text = "Hello \(userName).";
+		}else{
+			helloNameLabel.text = "Welcome!";
 		}
 		
 	}
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: sender);
+		
+		guard let viewControllerThree: ViewControllerThree = segue.destination as? ViewControllerThree else {
+			print ("Cant find the third viewcontroller")
+			return;
+		}
+		
+		viewControllerThree.userName = userName;
+	}
+	
+	
 	
 	/*
 	// MARK: - Navigation

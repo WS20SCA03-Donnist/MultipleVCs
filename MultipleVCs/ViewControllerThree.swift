@@ -18,7 +18,7 @@ class ViewControllerThree: UIViewController {
 
         // Do any additional setup after loading the view.
 		if let userName: String = userName {
-			directionsLabel.text = "Okay \(userName), memorize as much of the picture above and answer the the following questions. Hit \"OK\" to continue."
+			directionsLabel.text = "Okay \(userName), memorize as much of the picture above and answer the the following questions. Simon says, hit \"OK\" to continue."
 		}else{
 			directionsLabel.text = "Its not working";
 		}

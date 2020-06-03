@@ -15,6 +15,7 @@
 		F46E7886248577A900D8B03A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46E7884248577A900D8B03A /* LaunchScreen.storyboard */; };
 		F46E788E2485836D00D8B03A /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E788D2485836D00D8B03A /* ViewControllerTwo.swift */; };
 		F46E78922485964B00D8B03A /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E78912485964B00D8B03A /* ViewControllerThree.swift */; };
+		F46E78942487DE2800D8B03A /* ViewControllerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E78932487DE2800D8B03A /* ViewControllerFour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F46E7887248577A900D8B03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F46E788D2485836D00D8B03A /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		F46E78912485964B00D8B03A /* ViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
+		F46E78932487DE2800D8B03A /* ViewControllerFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F46E787D248577A300D8B03A /* ViewController.swift */,
 				F46E788D2485836D00D8B03A /* ViewControllerTwo.swift */,
 				F46E78912485964B00D8B03A /* ViewControllerThree.swift */,
+				F46E78932487DE2800D8B03A /* ViewControllerFour.swift */,
 				F46E787F248577A300D8B03A /* Main.storyboard */,
 				F46E7882248577A900D8B03A /* Assets.xcassets */,
 				F46E7884248577A900D8B03A /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				F46E78922485964B00D8B03A /* ViewControllerThree.swift in Sources */,
 				F46E787E248577A300D8B03A /* ViewController.swift in Sources */,
+				F46E78942487DE2800D8B03A /* ViewControllerFour.swift in Sources */,
 				F46E787A248577A300D8B03A /* AppDelegate.swift in Sources */,
 				F46E787C248577A300D8B03A /* SceneDelegate.swift in Sources */,
 				F46E788E2485836D00D8B03A /* ViewControllerTwo.swift in Sources */,
